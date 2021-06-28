@@ -1,0 +1,330 @@
+<html>
+    <head>
+        <title>WELCOME TO MY PAGE</title>
+        <script src='https://kit.fontawesome.com/c03a964169.js' crossorigin='anonymous'></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style type="text/css">
+        .blocks{
+            top:1520px;
+            left: 230px;
+            position: absolute;
+            height: 400px;
+            width: 1060px;
+            border: solid orangered;
+            background-color: black;
+        }
+        .b1{
+            margin-top:2px;
+            margin-left: 15px;
+            height: 350px;
+            width: 280px;
+            float: left;
+            color: whitesmoke;
+            text-align: center;
+            margin-right: 15px;
+            padding: 2%;
+        }
+        .container{
+           background-image: url("9.jpg");
+           position: absolute;
+           height: 740px;
+           width: 1500px;
+        }
+        .leftblock{
+            top: 80px;
+            left: 900px;
+           height: 400px;
+           width: 400px;
+           background-image: url("myimage.png");
+           z-index: 1;
+           position: absolute;
+           border: black;
+           border-style: solid;
+        }
+        .doubleblock{
+            top: 90px;
+            left: 910px;
+           height: 400px;
+           width: 400px;
+           background-image: url("myimage1.png");
+           position: absolute;
+           border: black;
+           border-style:solid;
+        }
+        .rightblock{
+            top: 230px;
+            left: 480px;
+            position: absolute;
+            height: auto;
+            color:rgb(207, 206, 206);
+        }
+        .aboutme{
+            top: 850px;
+            left: 10px;
+            height: 560px;
+            width: 1500;
+        
+            background-color:black;
+            color: cornsilk;
+            position: absolute;
+        }
+        .links{
+            top: 20px;
+            left: 1000px;
+            position: absolute;
+            color: black;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        a{
+            color:black;
+        }
+
+        .timeline{
+            height: 1730px;
+            width: 1200px;
+            top: 2150px;
+            left: 180px;
+            position: absolute;
+        }
+        .timeline::after{
+            content: '';
+            width: 6px;
+            top: 0%;
+            bottom: 0%;
+            position: absolute;
+            color: darkmagenta;
+            left: 50%;
+            background-color: black;
+        }
+        .right{
+            margin-left: 60%;
+        
+        }
+        .left{
+           margin-left:10%;
+        }
+        .b2{
+            height: 200px;
+            width: 350px;
+            margin-bottom: 70px;
+             padding: 1%;
+             color:white;
+             border-style: double;
+             border-color: black;
+             background-color:yellowgreen;
+             
+        }
+        .circle{
+            width: 80px;
+            height: 80px;
+            left: 560px;
+            border-radius: 40px;
+            background-color:rgb(167, 227, 238);
+        
+            content: '';
+            z-index: 1;
+            position: absolute;
+        }
+        .left::before{
+            content: '';
+            width: 0%;
+            height: 0%;
+            margin-left:360px;
+            margin-top: 10px;
+            position: absolute;
+            border-top: 15px solid transparent;
+            border-left: 30px solid yellowgreen;
+            border-bottom: 15px solid transparent; 
+            
+        }
+        .right::before{
+            content: '';
+            width: 0%;
+            height: 0%;
+            margin-left: -38px;
+            margin-top: 10px;
+            position: absolute;
+            border-top: 15px solid transparent;
+            border-right: 30px solid yellowgreen;
+            border-bottom: 15px solid transparent; 
+        
+            
+        }
+         .contact{
+             top:45px;
+             z-index: 1;
+             left: 173px;
+             position: absolute;
+             height: 450px;
+             width: 300px;
+             background-color:transparent;
+             border:solid;
+         }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="links">
+            <a href="port.html" style="font-size: 25px;font-family: cursive;">HOME</a>
+            <a href="#about" style="font-family:cursive;font-size: 25px;">ABOUT ME</a>
+            <a href="resume.html" style="font-size: 25px;font-family: cursive;">RESUME</a>
+            <button type="button" style="font-family: cursive;font-size: 25px;background-color: transparent;" onclick="myfun()">CONTACT</button>
+            <div id="contactinfo" class="contact" style="display: none;">
+                <i class="material-icons" style="top: 10px;font-size: 30px;position: absolute;color: rgb(207, 206, 206);left: 5px;background-color: black;">email</i>
+                <a href="mailto:rohitmou25@gmail.com"><div style="top: 10px;font-size: 20px;left:42px;position:absolute;color:rgb(207, 206, 206);background-color: black;padding: 1%;">rohitmou25@gmail.com</div></a>
+                <i class='fab fa-github' style="top: 100px;position: absolute;font-size: 30px;left: 5px;color:rgb(207, 206, 206);background-color: black;"></i>
+                <a href="https://github.com/rohit-56"><div style="left: 42px;position: absolute;color: rgb(207, 206, 206);top: 100px;font-size: 20px;background-color: black;padding: 1%;">rohit-56</div></a>
+                <i class='fas fa-mobile-alt' style="top: 190px;position: absolute;font-size: 30px;left: 5px;color: rgb(207, 206, 206);background-color: black;"></i>
+                <a href="tel:(+91)-8318198145"><div style="left:42px;position: absolute;color: rgb(207, 206, 206);top: 190px;font-size: 20px;background-color: black;padding: 1%;">8318198145</div></a>
+                
+                <i class='fab fa-instagram' style="top: 280px;position: absolute;font-size: 30px;left: 5px;color:rgb(207, 206, 206);background-color: black;" ></i>
+                <a ><div style="left: 42px;position: absolute;color:rgb(207, 206, 206);top: 280px;font-size: 20px;background-color: black;padding: 1%;">rohitsharma0810</div></a>
+                
+                <i class='fab fa-linkedin' style="top: 370px;position: absolute;font-size: 30px;left: 5px;color: rgb(207, 206, 206);background-color: black;" ></i>
+                <a href="http://www.linkedin.com/in/rohit-sharma-9837771b4
+                "><div style="color:rgb(207, 206, 206);position: absolute;left: 42px;top: 370px;font-size: 20px;width: 250px;background-color: black;padding: 1%;">rohit-sharma</div></a>
+              </div>
+            </div>
+            
+            <div class="rightblock">
+                <div style="font-size: 40px;font-weight: bolder;text-align: center;font-style: italic;">Hi, I am</div>
+                <div style="text-align: center;font-size: 70px;font-weight: bolder;font-style: italic;">ROHIT SHARMA</div>
+                <div style="font-weight: bolder;font-size: 30px;text-align: center;font-style: italic;">I am a Programmer</div>
+               <a href="mailto:rohitmou25@gmail.com"><div><i class="material-icons" style="top: 170px;font-size: 30px;left:200px;position:absolute;color:rgb(207, 206, 206);">email</i></div></a>
+                <a href="https://github.com/rohit-56"><div><i class='fab fa-github' style="left: 240px;position: absolute;color: rgb(207, 206, 206);top: 170px;font-size: 25px;"></i></div></a>
+                <a href="tel:(+91)-8318198145"><div><i class='fas fa-mobile-alt' style="left:280px;position: absolute;color: rgb(207, 206, 206);top: 170px;font-size: 25px;"></i></div></a>
+                
+      
+        
+                
+      
+                <a href="http://www.linkedin.com/in/rohit-sharma-9837771b4
+                "><div><i class='fab fa-linkedin' style="color:rgb(207, 206, 206);position: absolute;left: 310px;top: 170px;font-size: 25px;"></i></div></a>
+                </div>
+        </div>    
+        <h1 id="about" style="font-size: 30px;font-weight: bolder;font-family: cursive;color:white;z-index:1;top:745px;width: 1470px;text-align: center;position: absolute;background-color: black;padding: 1%;">ABOUT ME</h1>
+    
+              <div class="aboutme" >
+                
+               <div style="font-size: 20px;position: absolute;left: 150px;width: 600px;height: auto;top:80px;color: rgb(241, 239, 239)">I am currently pursuing my postgraduation from HBTU.
+               I am an optimistic person and I have a problem-solving
+               mind-set.I love to solve problems and the challenge of 
+               finding a way and discovering solutions.</div>
+               <div style="top:180px;position: absolute;left: 150px;font-size: 20px;width: 600px;color: rgb(241, 239, 239);">I love to do development work.Currently, looking for new opportunities to enhance my skills and achieve more technical skills, my inbox is always open.
+                   I will try my best to get back to you.
+               </div>
+               <div style="top: 270px;position:absolute;left: 150px;width: 600px;font-size: 20px;color: rgb(241, 239, 239);">Here are few programming language,I am recently working with 
+               <ul>
+                   <li>JAVASCRIPT</li>
+                   <LI>JAVA</LI>
+                   <LI>CSS</LI>
+               </ul>
+               </div>
+               <div style="width: 700px;left: 150px;top: 390px;position: absolute;font-size: 15px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+               <span>
+               <i class='fas fa-map-marker-alt' style="font-size: 22px;color:rgb(12, 155, 216);"></i>
+              <span style="left: 35px;position: absolute;color: rgb(241, 239, 239);"> Kanpur,Uttar Pradesh,India</span>
+                </span>
+                </div>
+                <div style="top:427px;left: 148px;position: absolute;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+               <span><i class="material-icons" style="top:2px;position:absolute;font-size:25px;color:rgb(12, 155, 216);">email</i>
+                      <span style="left: 35px;position: absolute;top:2px;color: rgb(241, 239, 239);">rohitmou25@gmail.com</span></span>
+               </div>
+               <div style="top:465px;left: 154px;position: absolute;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+               <span><i class='fas fa-mobile-alt' style="font-size:20px;color:rgb(12, 155, 216);"></i>
+              <span style="left: 30px;position: absolute;color: rgb(241, 239, 239);"> 8318198145</span></span>
+               </div>
+                 
+
+
+              <div class="leftblock"></div>
+              <div class="doubleblock"></div>
+              
+            </div>
+    <div class="blocks" id="project">
+        <div class="b1" style="background-color:dodgerblue;">
+            <h2 style="font-size: 29px;;">FEE PORTAL</h2>
+            <div style="width: 200x;height:160px;font-size: 20px;">It is an application whose objective is to maintains the record of fees of students. All the details are maintains from accountant side.This project builds using Java Swing and MySQL</div>
+            <i class='fab fa-java' style="font-size: 100px;color: black;"></i>
+        </div>
+
+        <div class="b1" style="background-color:yellowgreen">
+            <h2 style="font-size: 29px;">MONTHLY EXPENDITURE</h2>
+            <div style="font-size: 20px;height: 150px;">It is a web project whose objective is to maintain the monthly expenses with their expense title,date and amount.This project build using HTML,JAVASCRIPT and CSS.</div>
+            <a href="https://rohit-56.github.io/monthlyexpenses.github.io/" target="blnk" style="color: black;">https://rohit-56.github.io/monthlyexpenses.github.io/</a>
+        </div>
+
+        <div class="b1" style="background-color:tomato">
+            <h2 style="font-size: 29px;">MY PORTFOLIO</h2>
+            <div style="font-size: 20px;height: 200px;">My website which I build using HTML and CSS.It has resume,timeline and all the information about me.</div>
+        </div>
+    </div>
+
+    <h1 style="font-size: 30px;font-weight: bolder;font-family:Verdana, Geneva, Tahoma, sans-serif;color:cornsilk;width:1470px;top:1400px;text-align:center;position: absolute;background-color: black;padding: 1%;">MY PROJECTS</h1>
+    <h1 style="font-size: 30px;font-weight: bolder;font-family:Verdana, Geneva, Tahoma, sans-serif;color:cornsilk;width:1470px;top:1950px;text-align:center;position: absolute;background-color: black;padding: 1%;">TIMELINE</h1>
+    <div class="timeline">
+        <div>
+        <div class="b2 left" style="font-size: 25px;">How it all started,
+            At this time, I started to have some interest in coding.
+            I learned the C language while preparing for my semester exams.</div>
+        <h2 style="top: 15px;left: 700px;position: absolute;">2020</h2>
+        <div class="circle" style="top: 15px;left: 560px;position: absolute;"></div>
+            <i class='fas fa-book-reader' style="position: absolute;z-index: 1;top: 35px;left: 583px;font-size: 35px;color: tomato;"></i>
+        </div>
+        
+        <div class="b2 right" style="font-size: 25px;">I took JAVA language course from Coding Ninjas,
+            where I got the deep learning of programming.</div>
+        <h2 style="top:310px;left: 270px;position: absolute;">APRIL 2020 - JUNE2020</h2>
+        <div class="circle" style="top: 310px;left: 560px;position: absolute;"></div>
+            <i class='fab fa-java' style="position: absolute;top:330px;left:585px;font-size: 35px;z-index: 1;color: tomato;"></i>
+
+        
+        <div class="b2 left" style="font-size: 25px;">After completing the JAVA course, I took DS and Algo course from 
+            Coding Ninjas where I got deep knowledge and applications of
+            data structure.</div>
+        <h2 style="top: 600px;left: 700px;position: absolute;">JUNE 2020 - NOVEMBER 2020</h2>
+        <div class="circle" style="top:600px;left: 560px;position: absolute;"></div>
+            <i class='fab fa-java' style="position: absolute;top: 620px;left: 585px;font-size: 35px;z-index: 1;color: tomato;"></i>
+        
+        <div>
+        <div class="b2 right" style="font-size: 25px;">After few months of practice on data structure,
+            I managed  to build my first project, where I learned a lot and this 
+            project boost my development work.</div>
+        <h2 style="top: 890px;left: 130px;position: absolute;">DECEMBER 2020 - FEBRUARY 2021</h2>
+        <div class="circle" style="top:890px;left: 560px;position: absolute;"></div>
+            <i class='fas fa-project-diagram' style="position: absolute;top: 910px;left: 580px;font-size: 35px;z-index: 1;color: tomato;"></i>
+       <div>
+        <div class="b2 left" style="font-size: 25px;">After gaining knowledge from my first project, I start
+            web development. I build Monthly Expenditure project using JAVASCRIPT, HTML and CSS.</div>
+        <h2 style="top: 1200px;left: 700px;position: absolute;">MARCH 2021 - APRIL 2021</h2>
+        <div class="circle" style="top: 1200px;left: 560px;position: absolute;"></div>
+            <i class='fas fa-project-diagram' style="z-index: 1;position: absolute;left: 580px;top: 1220px;font-size: 35px;color: tomato;"></i>
+        </div>
+        <div>
+        <div class="b2 right" style="font-size: 25px;">Now I familiar with CSS language after building Monthly Expenditure project, so I decided to build my portfolio where I came across many interesting CSS functions and properties.</div>
+        <h2 style="top: 1480px;left: 400px;position: absolute;">MAY 2021</h2>
+        <div class="circle" style="top: 1480px;left: 560px;position: absolute;"></div>
+            <i class='fas fa-project-diagram' style="position: absolute;z-index: 1;top:1500px;left: 580px;font-size: 35px;color: tomato;"></i>
+        </div>
+    </div>
+
+
+  
+<script>
+    function myfun(){
+        var x = document.getElementById("contactinfo");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            
+    }
+    
+</script>
+
+
+
+</body>
+</html>
